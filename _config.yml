@@ -1,0 +1,17 @@
+name: Wikihub Jekyll
+baseurl: '/wikihub'
+
+owner: mushishi78
+repo: wikihub
+branch: gh-pages
+
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+defaults:
+  -
+    scope:
+      path: ''
+      type: posts
+    values:
+      layout: post

@@ -1,0 +1,54 @@
+---
+layout: compress
+---
+@charset 'utf-8';
+@import 'normalize';
+
+a { text-decoration: none; }
+button, textarea { outline: none; }
+li { padding: 5px 0; }
+header { text-align: center; }
+time { color: #999; }
+section { margin-bottom: 25px; }
+.hide { display: none; }
+
+main {
+  width: 85%;
+  margin: auto;
+}
+
+input, textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+.what-is-this {
+  display: block;
+  font-size: 0.8em;
+  margin: -10px 0 10px;
+}
+
+.feedback {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
+
+#error-section {
+  background: #FFB38E;
+  color: #A03838;
+}
+
+#success-section {
+  background: #ADFBB0;
+  color: #128A37;
+}

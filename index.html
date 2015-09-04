@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /
+---
+
+<article>
+  <h1>Posts</h1>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <a href='{{ site.baseurl }}{{ post.url }}'>
+          {{ post.title }} - <time>{{ post.date | date: '%d %B'}}</time>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+</article>
