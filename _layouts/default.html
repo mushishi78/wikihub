@@ -11,22 +11,21 @@ layout: compress
       {{ site.name }}
       {% if page.title %}| {{ page.title }}{% endif %}
     </title>
-
     <link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/assets/app.css' />
     <!--[if lte IE 8]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+      <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
     <![endif]-->
   </head>
   <body>
+    <header>
+      <a href='{{ site.baseurl }}/'>
+        <h1>{{ site.name }}</h1>
+      </a>
+    </header>
     <main>
-      <header>
-        <a href='{{ site.baseurl }}/'>
-          <h1>{{ site.name }}</h1>
-        </a>
-      </header>
-       {{ content }}
-     </main>
-     <script src='{{ site.baseurl }}/assets/app.js'></script>
+      {{ content }}
+    </main>
+    <script src='{{ site.baseurl }}/assets/app.js'></script>
   </body>
 </html>
