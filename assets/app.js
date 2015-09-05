@@ -14,15 +14,17 @@
   var successSection = document.getElementById('success-section');
   var loginSection   = document.getElementById('login-section');
   var editSection    = document.getElementById('edit-section');
+  var sections = [showSection, errorSection, loginSection, editSection, successSection];
 
   var tokenElem   = document.getElementsByName('token')[0];
   var textElem    = document.getElementsByName('text')[0];
   var messageElem = document.getElementsByName('message')[0];
 
-  function hide(elem) { show(elem); elem.className += ' hide'; }
   function show(elem) { elem.className = elem.className.replace('hide', ''); }
-  function hideAll() {
-    [showSection, errorSection, loginSection, editSection, successSection].forEach(hide);
+  function hideAll() { sections.forEach(hide); }
+  function hide(elem) {
+    show(elem);
+    elem.className += ' hide';
   }
 
   function load() {
