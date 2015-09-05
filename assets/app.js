@@ -9,11 +9,11 @@
     branch: '{{ site.branch }}'
   }
 
-  var showSection  = document.getElementById('show-section');
-  var errorSection = document.getElementById('error-section');
+  var showSection    = document.getElementById('show-section');
+  var errorSection   = document.getElementById('error-section');
   var successSection = document.getElementById('success-section');
-  var loginSection = document.getElementById('login-section');
-  var editSection  = document.getElementById('edit-section');
+  var loginSection   = document.getElementById('login-section');
+  var editSection    = document.getElementById('edit-section');
 
   var tokenElem   = document.getElementsByName('token')[0];
   var textElem    = document.getElementsByName('text')[0];
